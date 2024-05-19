@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 10px;
+            width:  90%;
+        }
+        .items{
+            display: grid;
+            grid-template-rows: 9fr 1fr;
+            grid-gap:10px;
+            width: 400px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            overflow:scroll;
+        }
+        .login{
+            display: grid;
+            grid-template-columns:repeat(4 2fr);
+            align-content: center;
+            padding: 3vh;
+        }
+        label{
+            border: hidden;
+        }
+    </style>
+</head>
+<body>
+    <H2>Built with Material Design for Bootstrap 4</H2>
+    <button>FREE DOWNLOAD</button>
+    <div class="container">
+        <div class="items">
+            <form class="login" style="border: 1px solid black;">
+                <h1 style="color:black">login</h1>
+                <label for='email'><img src=""></label><input type="text" value="Your Email"><br>
+                <label for="pass"><img src=""></label><input type="text" value="Your Password"><br>
+                <button style="border: 1px solid rgb(0, 0, 0); color: rgb(0, 0, 0);width:fit-content;"><p style="padding-right: 2vh; padding-left: 2vh;">NEXT</p></button>
+            </form>
+            <button>SIGN UP</button>
+        </div>
+        <div class="items">
+            <form class="login" style="border: 1px solid black; background-color: blueviolet;">
+                <h1 style="color:rgb(255, 255, 255)">login</h1>
+                <label for='email'><img src=""></label><input type="text" value="Your Email"><br>
+                <label for="pass"><img src=""></label><input type="text" value="Your Password"><br>
+                <button style="border: 1px solid rgb(255, 255, 255); color: #fff;width:fit-content; background-color: blueviolet;"><p style="padding-right: 2vh; padding-left: 2vh;">NEXT</p></button>
+            </form>
+            <button>SIGN UP</button>
+        </div>
+    </div>
+</body>
+</html>
